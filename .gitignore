@@ -1,0 +1,5 @@
+server/data/sessions.jsonl
+web/_shots/
+web/_ink_verify/
+tests/_shots*/
+*.log

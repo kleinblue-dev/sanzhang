@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f2eee4">
+<title>·</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="booting">
+<!-- 三张 · 外壳。文案 100% 由 app.js 从 GET /api/config 注入（R2），本文件不写任何界面文字。 -->
+<div id="app">
+  <div id="netbar" class="netbar" role="status" aria-live="polite" hidden></div>
+  <main id="stage" data-screen="gate"></main>
+  <footer id="foot" aria-hidden="true"><i class="seal"></i></footer>
+</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>

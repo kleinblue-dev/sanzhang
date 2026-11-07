@@ -1,0 +1,51 @@
+{
+  "version": "1",
+  "limits": {
+    "pre": { "min": 1, "max": 7 },
+    "post": { "min": 1, "max": 7 }
+  },
+  "copy": {
+    "gate_title": "三张纸",
+    "gate_promise1": "只摆不画",
+    "gate_promise2": "十二分钟",
+    "gate_promise3": "不做评判",
+    "gate_start": "开始",
+
+    "pre_title": "坐下之前",
+    "pre_q1": "身体紧不紧",
+    "pre_q2": "心里累不累",
+    "pre_q3": "念头乱不乱",
+    "pre_next": "继续",
+
+    "sheet_title": "摆一张",
+    "sheet_hint": "挑一块，摆上去",
+    "sheet_done": "收笔",
+    "sheet_undo": "撤销",
+    "sheet_tray": "取块",
+
+    "signature_title": "落款",
+    "signature_hint": "留一笔，或跳过",
+    "signature_skip": "跳过",
+
+    "post_title": "再看一次",
+    "post_q1": "身体紧不紧",
+    "post_q2": "心里累不累",
+    "post_q3": "念头乱不乱",
+    "post_ux1": "刚才顺手吗",
+    "post_ux2": "愿意再来",
+    "post_next": "看看",
+
+    "cards_change_title": "前后变化",
+    "cards_process_title": "三张过程",
+    "cards_hint": "点开看全部",
+
+    "replay_title": "三张",
+    "replay_hint": "横滑回看",
+
+    "done_title": "收卷",
+    "done_export": "导出",
+    "done_again": "重来",
+
+    "err_offline": "离线，结果存本机"
+  }
+}
