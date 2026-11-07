@@ -1,4 +1,4 @@
-﻿/* 三张 · 外壳（shell）—— app/shared/contract.md 是唯一真源
+/* 三张 · 外壳（shell）—— app/shared/contract.md 是唯一真源
  *
  * 本文件只做四件事：
  *   1) 8 屏状态机（gate → pre → sheet×3 → signature → post → cards → replay → done）
@@ -60,7 +60,11 @@ const FALLBACK_COPY = Object.freeze({
 });
 
 /* ============================ 1. 常量 / 状态 ============================ */
-const API_BASE = ''; // R1：只打同源，不发第三方请求
+const API_BASE = (() => {
+  const meta = document.querySelector('meta[name="api-base"]');
+  const raw = (window.__API_BASE__ || (meta && meta.content) || '').trim();
+  return raw.replace(/\/+$/, '');
+})(); // R1：默认同源；分域部署只改 index.html 的 meta，不动本文件
 const ROUND_TOTAL = 3;
 const FALLBACK_LIMIT = 7;
 
