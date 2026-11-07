@@ -1,0 +1,15 @@
+# Render 蓝图：一条命令/一次点击部署后端（免费档）
+# 用法：Render 控制台 → New → Blueprint → 选本仓库
+services:
+  - type: web
+    name: sanzhang
+    runtime: node
+    plan: free
+    buildCommand: echo "no build needed"
+    startCommand: node server/server.mjs
+    healthCheckPath: /api/config
+    envVars:
+      - key: NODE_VERSION
+        value: 24.14.0
+    # ⚠️ 免费档文件系统是临时的：server/data/sessions.jsonl 会在重启/重新部署后清空。
+    # 真实收数据要么挂持久磁盘（付费），要么把 store.mjs 换成外部库（Supabase/Postgres）。
